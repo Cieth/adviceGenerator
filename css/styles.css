@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+body{
+    background-color:hsl(212, 45%, 89%);
+    font-family:"Outfit" , sans-serif;
+}
 
 .main-advice{
-    width: auto;
-    height: 400px;
-    background-color: rgb(106, 248, 248);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    width: 400px;
+    height:150px;
+}
+
+.main-advice p{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    border-color: beige;
+    border-radius: 10px;
+    position: relative;
+    width: 100px;
+    height:30px;
+    background-color: aliceblue;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
 }

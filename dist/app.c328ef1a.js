@@ -5310,17 +5310,21 @@ var _axios = _interopRequireDefault(require("axios"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var main = document.querySelector('.main-advice');
+var btn = document.querySelector('.btn');
 
 function getAdvice() {
   _axios.default.get('https://api.adviceslip.com/advice').then(function (response) {
     console.log(response.data.slip.advice);
-    main.innerHTML = response.data.slip.advice;
+    main.innerHTML = "<p>".concat(response.data.slip.advice.replace(/[^\w\s]/gi, ''), "</p>");
   }).catch(function (err) {
     console.log(err);
   });
 }
 
 getAdvice();
+btn.addEventListener('click', function (events) {
+  getAdvice();
+});
 },{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","axios":"node_modules/axios/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -5349,7 +5353,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58131" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58668" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
