@@ -12,7 +12,7 @@ body{
     transform: translate(-50%, -50%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 30px;
-    width: 400px;
+    width: 320px;
     height:170px;
 }
 
@@ -28,15 +28,58 @@ body{
     font-size: 15px;
 }
 .btn{
+    font-family: "Outfit" , sans-serif;
+    font-weight: 500;
+    box-shadow: blue 20px;
     border-color: beige;
     border-radius: 10px;
     position: relative;
-    width: 100px;
-    height:30px;
+    width: 120px;
+    height:40px;
     background-color: aliceblue;
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 67%;
     transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 992px) {
+    .main-advice{
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        width: 400px;
+        height:170px;
+    }
+    
+    .main-advice p{
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-advice h1{
+        text-align: center;
+        font-size: 15px;
+    }
+    .btn{
+        border-color: beige;
+        border-radius: 10px;
+        position: relative;
+        width: 100px;
+        height:30px;
+        background-color: aliceblue;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+    }
 }
