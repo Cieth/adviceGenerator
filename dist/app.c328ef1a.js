@@ -5314,8 +5314,7 @@ var btn = document.querySelector('.btn');
 
 function getAdvice() {
   _axios.default.get('https://api.adviceslip.com/advice').then(function (response) {
-    console.log(response.data.slip.advice);
-    main.innerHTML = "<p>".concat(response.data.slip.advice.replace(/[^\w\s]/gi, ''), "</p>");
+    main.innerHTML = "\n        <h1>Advice #".concat(response.data.slip.id, "</h1>\n        <br>\n        \n        <p>").concat(response.data.slip.advice.replace(/[^\w\s]/gi, ''), "</p>\n        ");
   }).catch(function (err) {
     console.log(err);
   });

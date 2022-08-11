@@ -6,8 +6,13 @@ let btn = document.querySelector('.btn')
 function getAdvice() {
     axios.get('https://api.adviceslip.com/advice')
     .then(function(response) {
-        console.log (response.data.slip.advice)
-        main.innerHTML = `<p>${response.data.slip.advice.replace(/[^\w\s]/gi, '')}</p>`
+        main.innerHTML = 
+        `
+        <h1>Advice #${response.data.slip.id}</h1>
+        <br>
+        
+        <p>${response.data.slip.advice.replace(/[^\w\s]/gi, '')}</p>
+        `
     }).catch(function(err){
         console.log(err);
       });

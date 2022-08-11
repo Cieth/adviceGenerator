@@ -13,7 +13,7 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 30px;
     width: 400px;
-    height:150px;
+    height:170px;
 }
 
 .main-advice p{
@@ -23,7 +23,10 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.main-advice h1{
+    text-align: center;
+    font-size: 15px;
+}
 .btn{
     border-color: beige;
     border-radius: 10px;
