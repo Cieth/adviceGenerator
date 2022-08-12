@@ -3,20 +3,32 @@ body{
     background-color:hsl(212, 45%, 89%);
     font-family:"Outfit" , sans-serif;
 }
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
 
 .main-advice{
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 30px;
     width: 320px;
-    height:170px;
+    height:190px;
 }
 
 .main-advice p{
+    text-align:center;
     margin: 0;
     position: absolute;
     left: 50%;
@@ -27,6 +39,7 @@ body{
     text-align: center;
     font-size: 15px;
 }
+
 .btn{
     font-family: "Outfit" , sans-serif;
     font-weight: 500;
@@ -34,17 +47,37 @@ body{
     border-color: beige;
     border-radius: 10px;
     position: relative;
-    width: 120px;
-    height:40px;
+    width: 140px;
+    height:30px;
+    font-size: 14px;
     background-color: aliceblue;
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 67%;
+    top: 65%;
     transform: translate(-50%, -50%);
 }
 
-
+.search{
+    width: 100px;
+    height:25px;
+    margin: 0;
+    position: absolute;
+    left: 75%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.field{
+    border: solid hsl(193, 38%, 86%);
+    border-radius: 20px;
+    width: 140px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
 @media (min-width: 992px) {
     .main-advice{
         margin: 0;
@@ -55,7 +88,7 @@ body{
         background-color: hsl(0, 0%, 100%);
         border-radius: 30px;
         width: 400px;
-        height:170px;
+        height:235px;
     }
     
     .main-advice p{
@@ -74,14 +107,41 @@ body{
         border-radius: 10px;
         position: relative;
         width: 100px;
-        height:30px;
+        height:45px;
         background-color: aliceblue;
         margin: 0;
         position: absolute;
         left: 50%;
-        top: 65%;
+        top: 72%;
         transform: translate(-50%, -50%);
     }
+    .search{
+        font-size: 13px;
+        width: 70px;
+        height:30px;
+        margin: 0;
+        position: absolute;
+        left: 96%;
+        top: 5%;
+        transform: translate(-50%, -50%);
+    }
+    .field{
+        border: solid hsl(193, 38%, 86%);
+        border-radius: 20px;
+        width: 150px;
+        margin: 0;
+        position: absolute;
+        left: 86%;
+        top: 5%;
+        height: 27px;
+        transform: translate(-50%, -50%);
+
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 }
 
 /*# sourceMappingURL=/styles.b61e60ae.css.map */

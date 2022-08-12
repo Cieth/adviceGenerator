@@ -5324,6 +5324,21 @@ getAdvice();
 btn.addEventListener('click', function (events) {
   getAdvice();
 });
+
+function getAdviceById(id) {
+  _axios.default.get("https://api.adviceslip.com/advice/".concat(id)).then(function (response) {
+    console.log(response.data.slip.advice);
+    main.innerHTML = "   \n        <h1>Advice #".concat(response.data.slip.id, "</h1>\n        <br>\n        <br>\n        \n        <p>").concat(response.data.slip.advice.replace(/[^\w\s]/gi, ''), "</p>\n        ");
+  }).catch(function (err) {
+    main.innerHTML = "   \n        <h1>Advice ???</h1>\n        <br>\n        \n        <p>This advice has not been written yet</p>\n        ";
+  });
+}
+
+var search = document.querySelector(".search");
+var input = document.querySelector(".field");
+search.addEventListener("click", function () {
+  getAdviceById(input.value);
+});
 },{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","axios":"node_modules/axios/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -5352,7 +5367,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55660" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61768" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

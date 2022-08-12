@@ -5,6 +5,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Table of contents
 
+
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [My process](#my-process)
